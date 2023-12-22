@@ -22,10 +22,18 @@ sendButton.addEventListener("click", async () => {
 
     // Send message to backend and display AI response
     try {
-        const response = await fetch("/sendMessage", {
+        /*const response = await fetch("/sendMessage", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ message: userMessage })
+        });*/
+        const response = await fetch("/sendMessage", {
+            method: "POST",
+            headers: {
+                // Remove the "Content-Type" header:
+                // "Content-Type": "application/json"  // Comment this out
+            },
+            body: userMessage  // Send the message directly without stringifying
         });
 
         const data = await response.json();
