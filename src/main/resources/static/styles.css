@@ -1,0 +1,59 @@
+/* Basic styling for chat elements */
+.chat-container {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chat-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-body {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.chat-messages {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-message {
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.chat-message.user {
+    text-align: right;
+}
+
+.chat-message.ai {
+    text-align: left;
+}
+
+.chat-input {
+    padding: 10px;
+}
+
+.chat-input input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-input button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
